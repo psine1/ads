@@ -1,0 +1,418 @@
+@charset "UTF-8";
+ 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#loader-container {
+    width: 970px;
+    height: 250px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: absolute;
+    background: #fff;
+    z-index: 10000;
+    border: 1px solid #555555;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background: #fff;
+}
+
+#banner_content {
+    display: none;
+}
+
+.banner {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 970px;
+    height: 250px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #555555;
+    overflow: hidden;
+    display: block !important;
+    background: #555555;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+strong {
+    font-weight: bold;
+}
+
+sup {
+    font-size: 6px;
+    position: relative;
+    top: -0.8em;
+    left: -2px;
+}
+
+.positionAb {
+    position: absolute;
+}
+
+.aC {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#clickTag {
+    width: 970px;
+    height: 250px;
+    cursor: pointer;
+    box-sizing: border-box;
+    top: -1px;
+    left: -1px;
+}
+
+#loader-container .circle {
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+    border: 5px solid #ddd;
+    border-bottom-color: #333;
+    border-radius: 50%;
+    height: 40px;
+    left: 50%;
+    margin-left: -22.5px;
+    margin-top: -22.5px;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    width: 40px;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+
+}
+
+
+[id*='txt-']{
+    left: 0px;
+    top: 0px;
+    width: 970px;
+    height: 250px;
+}
+
+
+
+/*
+[id*='txt-1']{
+    filter: drop-shadow(0px 0px 6px rgba(237, 89, 99, 0.506));
+}
+
+[id*='txt-2']{
+    filter: drop-shadow(0px 0px 6px rgba(239, 169, 65, 0.35));
+}
+
+[id*='txt-3']{
+    filter: drop-shadow(0px 0px 6px rgba(71, 163, 205, 0.459));
+}
+
+*/
+
+[id*='txt-4']{
+    left: 0px;
+    top: 0px;
+    width: 970px;
+    height: 250px;
+}
+
+[id*='scene']{
+    left: 0px;
+    top: 0px;
+    width: 970px;
+    height: 250px;
+}
+
+
+#bg-1{
+    width: 1070px;
+    height: 250px;
+    left: -50px;
+    top: 0px;
+    overflow: hidden;
+}
+
+#bg-2{
+    width: 1070px;
+    height: 250px;
+    left: -100px;
+    top: 0px;
+    overflow: hidden;
+}
+
+
+#bg-3{
+    width: 970px;
+    height: 350px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+
+#bg-4{
+    width: 970px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    background-color: #47a2cd;
+}
+
+
+#border{
+    width: 970px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+
+
+#color-1{
+    width: 970px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    background-color: #555555;
+}
+
+#color-2{
+    width: 970px;
+    height: 250px;
+    left: -40px;
+    top: 0px;
+    background-color: #97CB59;
+}
+
+
+#color-3{
+    width: 970px;
+    height: 250px;
+    left: -80px;
+    top: 0px;
+    background-color: #FDB913;
+}
+
+#color-4{
+    width: 970px;
+    height: 250px;
+    left: -120px;
+    top: 0px;
+    background-color: #00A5D1;
+}
+
+#logo-end{
+    width: 238px;
+    left: 47px;
+    top: 59px;
+}
+
+#cta{
+    width: 181px;
+    height: 42px;
+    top: 116px;
+    left: 730px;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+
+#ball{
+    width: 149px;
+    left: 6px;
+    top: 271px;
+}
+
+#triangle{
+    width: 187px;
+    left: 123px;
+    top: 249px;    
+}
+
+
+
+#anim-heart{
+    width: 1070px;
+    height: 250px;
+    left: -50px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.anim-heart-1{
+    width: 1070px;
+    left: 0px;
+    top: 0px;
+}
+
+.anim-heart-2{
+    width: 1070px;
+    left: 1070px;
+    top: 0px;
+}
+
+.anim-heart-3{
+    width: 1070px;
+    left: 2140px;
+    top: 0px;
+}
+
+
+
+
+#anim-bottle{
+    width: 1070px;
+    height: 250px;
+    left: -100px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.anim-bottle-1{
+    width: 1070px;
+    left: 0px;
+    top: 0px;
+}
+
+.anim-bottle-2{
+    width: 1070px;
+    left: 1070px;
+    top: 0px;
+}
+
+.anim-bottle-3{
+    width: 1070px;
+    left: 2140px;
+    top: 0px;
+}
+
+
+#anim-man{
+    width: 970px;
+    left: 0px;
+    top: 0px;
+}
+
+
+.wrap-man{
+    left: 0px;
+}
+
+.wrap-man2{
+    left: 970px;
+}
+
+.wrap-man3{
+    left: 1940px;
+}
+
+
+
+.light{
+    width: 300px;
+    height: 600px;
+    left: 0px;
+    top: -150px; 
+    overflow: hidden;
+    mix-blend-mode: screen;
+}
+
+#wrap-btn{
+    width: 193px;
+    height: 48px;
+    left: 720px;
+    top: 113px;
+    overflow: hidden;
+}
+
+#anim-btn-1{
+    width: 193px;
+    left: 0px;
+    top: 0px;
+}
+
+#anim-btn-2{
+    width: 193px;
+    left: 193px;
+    top: 0px;
+}
+
+#anim-btn-3{
+    width: 193px;
+    left: 386px;
+    top: 0px
+}
+
+
+#anim-flower{
+    width: 20px;
+    left: 150px;
+    top: 136px;
+}
+
+.wrap-flower-sel{
+    width: 150px;
+    left: 812px;
+    top: 32px;
+}
+
+[id*='flower-']{
+    width: 30px;
+
+}
+
+
+
+
+.shadow1{
+    filter: drop-shadow(0px 0px 15px rgba(89, 187, 237, 0.5)) blur(0px);
+}
+
+
+.shadow2{
+    filter: drop-shadow(0px 0px 15px rgba(239, 169, 65, 0.5)) blur(0px);
+}
+
+.shadow3{
+    filter: drop-shadow(0px 0px 15px rgba(71, 163, 205, 0.5)) blur(0px);
+}

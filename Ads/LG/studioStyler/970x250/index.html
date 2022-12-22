@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" lang="en">
+	<title>
+        LG Studio Line 970x250
+    </title>
+	<meta name="ad.size" content="width=970,height=250">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- css -->
+	<style>
+		body {
+			margin: 0;
+		}
+
+		#loader_container {
+		    width: 970px;
+		    height: 250px;
+		    box-sizing: border-box;
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    position: absolute;
+		    background: #fff;
+		    z-index: 0;
+		    border: 1px solid #000;
+		}
+
+		#loader_container .circle {
+	      -webkit-animation: spin 0.5s linear infinite;
+	              animation: spin 0.5s linear infinite;
+	      border: 5px solid #ddd;
+	      border-bottom-color: #333;
+	      border-radius: 50%;
+	      height: 40px;
+	      left: 50%;
+	      margin-left: -22.5px;
+	      margin-top: -22.5px;
+	      position: absolute;
+	      top: 50%;
+	      -webkit-transition: all 0.7s ease-in-out;
+	      -o-transition: all 0.7s ease-in-out;
+	      transition: all 0.7s ease-in-out;
+	      width: 40px; }
+	  
+	  @-webkit-keyframes spin {
+	    from {
+	      -webkit-transform: rotate(0deg);
+	              transform: rotate(0deg); }
+	    to {
+	      -webkit-transform: rotate(360deg);
+	              transform: rotate(360deg); } }
+	  
+	  @keyframes spin {
+	    from {
+	      -webkit-transform: rotate(0deg);
+	              transform: rotate(0deg); }
+	    to {
+	      -webkit-transform: rotate(360deg);
+	              transform: rotate(360deg); } }
+
+
+	</style>
+
+	<!-- greensock -->
+	<script src='https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.20.4_3dc5474a75410cb768741e402b80d908_min.js'></script>
+
+	<!-- scripts -->
+	<script src="scripts.min.js"></script>
+	<!-- <script src="particles.min.js"></script> -->
+
+	<!-- main -->
+	<script type="text/javascript" src="banner.js"></script>
+
+	<!-- custom clicktag -->
+	<script type='text/javascript'>
+		var clickTag = '';
+	</script>
+
+</head>
+
+<body onload="myBanner.main();">
+	<div id="loader_container">
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>

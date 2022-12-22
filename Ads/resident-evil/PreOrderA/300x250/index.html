@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>300x250</title>
+    <!-- Digitaland Template Ver.1.2 -->
+    <meta name="ad.size" content="width=300,height=250" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" href="dl_reset.css" />
+    <link rel="stylesheet" href="dl_style.css" />
+
+    <style>
+      /* #region reset */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* #endregion */
+
+      /* #region custom */
+
+      .wrapper {
+        position: relative;
+        width: 300px;
+        height: 250px;
+        /* opacity: 0; */
+        /* cursor: pointer; */
+        overflow: hidden;
+      }
+
+      .abs {
+        position: absolute;
+      }
+
+      .bg {
+        width: 300px;
+        height: 250px;
+        background-color: #000;
+        /* background-color: #6e6e6e; */
+      }
+      #snow {
+        width: 100%;
+        height: 100%;
+        filter: blur(3px);
+        opacity: 0;
+
+      }
+
+      .shade {
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 1;
+      }
+
+      .logo {
+        background: url(images/logo.png) no-repeat;
+        width: 176px;
+        height: 84px;
+        left: 58px;
+        top: 20px;
+        background-size:contain;
+      }
+
+      .logoCapcom {
+        background: url(images/logoCapcom.png) no-repeat;
+        width: 171px;
+        height: 58px;
+        left: 63px;
+        top: 13px;
+        background-size:contain;
+      }
+
+      .copy-01-01 {
+        width: 234px;
+        height: 38px;
+        left: 34px;
+        top: 187px;
+      }
+      .copy-02-01 {
+        width: 242px;
+        height: 84px;
+        left: 29px;
+        top: 142px;
+      }
+      .copy-03-01 {
+        width: 189px;
+        height: 84px;
+        left: 52px;
+        top: 141px;
+      }
+      .copy-04-01 {
+        width: 204px;
+        height: 84px;
+        left: 48px;
+        top: 142px;
+      }
+
+      .copy-05-01 {
+        width: 202px;
+        height: 84px;
+        left: 49px;
+        top: 142px;
+      }      
+
+      .cta {
+        width: 210px;
+        height: 73px;
+        left: 38px;
+        top: 152px;
+      }
+
+      .copyright {
+        width: 117px;
+        height: 11px;
+        left: 85px;
+        top: 235px;
+      }
+
+      .cover {
+        position: relative;
+        /* filter: blur(1px); */
+      }
+
+      .cover-bg {
+        width: 300px;
+        height: 250px;
+        top: 0px;
+        background-color: #e8e8e8;
+      }
+
+      .cover-side {
+        width: 300px;
+        height: 250px;
+        top: 250px;
+      }
+
+      .img-snow{
+        width: 670px;
+        height: 377px;
+        top: -84px; left: -98px;
+      }
+
+  #dust{
+    width: 1100px; 
+    height: 250px;
+    left: 0px;
+    top: 250px;
+
+opacity: 0.25; 
+ }
+
+    #dust2{
+    width: 1100px; 
+    height: 250px;
+    left: 1100px;
+    top: 250px;
+
+opacity: 0.25; 
+ }
+
+ [id*='dust'] img{
+    width: 1100px; 
+    height: 500px;
+ }
+
+      /* #endregion */
+    </style>
+  </head>
+  <body>
+    <script>
+      var clickTag = 'https://www.residentevil.com/village/us/';
+    </script>
+
+    <div class="wrapper">
+      <!-- loader -->
+      <div id="loader-container">
+        <div class="circle"></div>
+      </div>
+
+      <!-- main -->
+      <div class="banner positionAb" id="banner_content">
+        <div id="clickTag" class="positionAb">
+          <!-- content -->
+          <div class="abs bg"></div>
+
+          <img class="img-snow abs" src="images/img-snow.jpg" alt="img-snow" />
+<!--
+                <div id="dust" class="abs"><img src="images/dust.png"></div>
+                <div id="dust2" class="abs"><img src="images/dust.png"></div>
+
+              -->
+          <div id="fire-1" class="abs"><img src="images/particle.png"></div>
+          <div id="fire-2" class="abs"><img src="images/particle.png"></div>
+          <div id="fire-3" class="abs"><img src="images/particle.png"></div>   
+          <div class="shade abs"></div> 
+
+          <div id="snow" class="abs"></div>
+
+          <div class="cover">
+            <div class="cover-bg abs"></div>
+            <img class="cover-side abs" src="images/ink-side.png" alt="ink" />
+          </div>
+
+          <div class="logo abs"></div>
+          <div class="logoCapcom abs"></div>
+
+
+          <img
+            class="copy-01-01 abs"
+            src="images/copy-01-01.png"
+            alt="copy-01-01"
+          />
+          <img
+            class="copy-02-01 abs"
+            src="images/copy-02-01.png"
+            alt="copy-02-01"
+          />
+          <img
+            class="copy-03-01 abs"
+            src="images/copy-03-01.png"
+            alt="copy-03-01"
+          />
+          <img
+            class="copy-04-01 abs"
+            src="images/copy-04-01.png"
+            alt="copy-04-01"
+          />
+
+          <img
+            class="copy-05-01 abs"
+            src="images/copy-05-01.png"
+            alt="copy-05-01"
+          />          
+
+          <img class="cta abs" src="images/cta.png" alt="cta" />
+
+          <img
+            class="copyright abs"
+            src="images/copyright.png"
+            alt="copyright"
+          />
+
+          <!-- ©CAPCOM CO., LTD. 2021 ALL RIGHTS RESERVED. -->
+        </div>
+      </div>
+      <!-- main -->
+    </div>
+
+    <script>
+      var ready = false;
+
+      // #region config
+      var config = {
+        particles: {
+          number: {
+            value: 100,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: '#fff',
+          },
+          shape: {
+            type: 'circle',
+            stroke: {
+              width: 0,
+              color: '#000000',
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: 'img/github.svg',
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.8,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 6,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+            distance: 500,
+            color: '#ffffff',
+            opacity: 0.4,
+            width: 2,
+          },
+          move: {
+            enable: true,
+            speed: 20,
+            direction: 'bottom-right',
+            random: false,
+            straight: false,
+            out_mode: 'out',
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 250,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: 'canvas',
+          events: {
+            onhover: {
+              enable: false,
+              mode: 'bubble',
+            },
+            onclick: {
+              enable: false,
+              mode: 'repulse',
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 0.5,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 4,
+              duration: 0.3,
+              opacity: 1,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      };
+      // #endregion
+
+      function init() {
+        prepare();
+
+        function prepare() {
+          // ease
+          CustomEase.create(
+            'easeIn',
+            'M0,0 C0.084,0.61 0.214,0.802 0.28,0.856 0.356,0.918 0.374,1 1,1'
+          );
+          CustomEase.create(
+            'easeOut',
+            'M0,0,C0.5,0,0.581,0.047,0.625,0.073,0.72,0.13,0.9,0.23,1,1'
+          );
+          CustomEase.create(
+            'easeInOut',
+            'M0,0,C0.272,0,0.472,0.455,0.496,0.496,0.574,0.63,0.744,1,1,1'
+          );
+        }
+
+        function ready() {
+          window.ready = true;
+          // console.log(window.ready);
+        }
+
+        var a = {
+          copyIn: function (sel, duration) {
+            var tl = gsap.timeline({
+              defaults: { duration: duration },
+            });
+            tl.from(sel, {
+              scale: 2,
+              opacity: 0,
+              ease: 'easeIn',
+            }).to(sel, {
+              scale: 0.2,
+              opacity: 0,
+              ease: 'easeOut',
+            });
+
+            return tl;
+          },
+          ctaIn: function (sel) {
+            var tl = gsap.timeline({ defaults: { duration: 0.8 } });
+            tl.from(sel, { scale: 2, opacity: 0, ease: 'easeIn' });
+
+            return tl;
+          },
+          logoMin: function (sel) {
+            var s = 176 / 176;
+            var tl = gsap.timeline();
+            tl.to(sel, {
+              transformOrigin: '50% 50%',
+              duration: 1.2, opacity: 0,
+              ease: 'easeInOut',
+            });
+
+            return tl;
+          },
+
+          logoMinCapcom: function (sel) {
+            var s = 176 / 176;
+            var tl = gsap.timeline();
+            tl.to(sel, {
+              transformOrigin: '50% 50%',
+              duration: 1.2,
+              ease: 'easeInOut',
+            });
+
+            return tl;
+          },
+
+          logoMax: function (sel) {
+            var s = 1;
+            var tl = gsap.timeline();
+            tl.to(sel, {
+              transformOrigin: '50% 50%',
+              duration: 0.8, opacity: 1,
+              scale: 1,
+              ease: 'easeInOut',
+            });
+
+            return tl;
+          },
+          imageSnowMove: function (sel) {
+
+            const moveSnow = {
+              curviness: 0.2,
+              path: [{x:0, y: 0, scale: 1}, {x:-110, y: 90, scale: 0.6,}]
+            };
+
+            var tl = gsap.timeline();
+            tl
+            .to('.img-snow', {
+              motionPath: moveSnow,
+              duration: 13,
+              ease: 'easeInOut'
+            });            
+
+            return tl;
+          },
+
+          startSnow: function () {
+            particlesJS('snow', config, function () {});
+            gsap.from('#snow', { duration: 3, autoAlpha: 0 });
+          },
+          stopSnow: function () {
+            // console.log('stopSnow');
+            gsap.to('#snow', { duration: 1, autoAlpha: 0 });
+          },
+        };
+
+        var tl_Dust = gsap.timeline();
+        tl_Dust
+      .from("#dust img", 10, {ease:'none', x: -1100, repeat: -1},0)
+      .from("#dust2 img", 10, {ease:'none', x: -1100, repeat: -1},0)
+      .to("[id*='dust']", 5, {ease:Power1.easeOut, y: 50, yoyo: true, repeat: -1}, 0);
+
+
+        var tl_particle = gsap.timeline();
+        tl_particle
+        .fromTo("#fire-1", 2.5, {x: -100, y: 100}, {ease:'none', x: 100, y: -600, repeat: -1},0)
+        .fromTo("#fire-2", 2.5, {x: -100, y: 100}, {ease:'none', x: 500, y: -600, repeat: -1},0.5)
+        .fromTo("#fire-3", 2.5, {x: -100, y: 100}, {ease:'none', x: 300, y: -600, repeat: -1},1)        
+
+         ;
+
+
+        var tl = gsap.timeline();
+        tl.set('.copy-03-01, .copy-04-01, .copy-05-01, .cta', { opacity: 0 })
+          // .set('#ink', { x: 470, y: -300, scale: .6 })
+          //.set('.img-snow', { y: 57, x: -144 })
+          .to('.wrapper', { duration: 0.5, opacity: 1 })
+          .add('start', 0.3)
+
+          .from(
+            '.logo',
+            { scale: 1.2, opacity: 0, duration: 1, ease: 'easeIn' },
+            'start'
+          )
+
+          .to('.cover', { duration: 1.2, y: '-=250', ease: 'easeIn' }, 'start')
+          .to('.shade', { duration: 2, opacity: 0, ease: 'none' }, '<')
+          .call(a.startSnow, null, '<+1')
+
+          // streaming live now
+          .add(a.imageSnowMove('.img-snow'), '<')
+          .add(a.copyIn('.copy-01-01', 2.2), '<')
+
+          .add('logos', '>-.2')
+
+          .add(a.logoMin('.logo'), 'logos')
+          .fromTo('.logoCapcom', {x: 0, opacity: 0}, { duration: 1, opacity: 1, ease: 'easeInOut' }, '>-0.2')
+
+          .to('.cover', { duration: 1.2, y: '-=45', ease: 'easeInOut' }, '<')
+
+     //     .to('.shade', { duration: 2, opacity: 0.1, ease: 'none' }, '<')
+
+          // gameplay footage
+          .add(a.copyIn('.copy-02-01', 1.6), '<+.4')
+
+          // exclusive reveals
+          .add(a.copyIn('.copy-03-01', 1.6), '>-.2')
+
+          // special announcements and more
+          .add(a.copyIn('.copy-04-01', 1.6), '>-.2')
+
+          .add(a.copyIn('.copy-05-01', 1.6), '>-.2')   
+
+          .to('.logoCapcom', { duration: 0.7, opacity: 0, ease: 'easeInOut' }, '>-.2')
+          .add(a.logoMax('.logo'), '>-.2')
+          .call(a.stopSnow, null, '<')
+          .to('.shade', { duration: 0.8, opacity: 1 }, '<')
+          .from('.copyright', { duration: 0.8, autoAlpha: 0 }, '<')
+          .to('.cover', { duration: 0.8, y: '+=40', x: 0, ease: 'easeInOut' }, '<')
+
+          // watch now
+          .add(a.ctaIn('.cta'), '<')
+          .call(ready, null, '>');
+
+        console.log(tl.duration());
+      }
+    </script>
+
+    <!-- scripts -->
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+
+    
+    <script src="scripts/CustomEase.min.js"></script>
+    <script src="scripts/particles.min.js"></script>
+
+    <script src="dl_main.js"></script>
+  </body>
+</html>

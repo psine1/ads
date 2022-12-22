@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#loader-container {
+    width: 320px;
+    height: 320px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: absolute;
+    background: #fff;
+    z-index: 10000;
+    border: 1px solid #000;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background: #fff;
+}
+
+#banner_content {
+    display: none;
+}
+
+.banner {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 320px;
+    height: 320px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #000;
+    overflow: hidden;
+    display: block !important;
+    background: #000000;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+strong {
+    font-weight: bold;
+}
+
+sup {
+    font-size: 6px;
+    position: relative;
+    top: -0.8em;
+    left: -2px;
+}
+
+.positionAb {
+    position: absolute;
+}
+
+.aC {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#clickTag {
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+    box-sizing: border-box;
+    top: -1px;
+    left: -1px;
+}
+
+#loader-container .circle {
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+    border: 5px solid #ddd;
+    border-bottom-color: #333;
+    border-radius: 50%;
+    height: 40px;
+    left: 50%;
+    margin-left: -22.5px;
+    margin-top: -22.5px;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    width: 40px;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+[id*='txt-1']{
+    width: 245px;
+    height: 68px;
+    left: 38px;
+    top: 181px;
+}
+
+#contWav{
+    width: 81px;
+    height: 79px;
+    left: 127px;
+    top: 75px;
+  /*  background-color: #ffcc00;*/
+
+}
+
+
+.barWav{
+    width: 4px;
+/*    height: 31px;*/
+    height: 79px;
+    background-color: #FFFFFF; 
+    padding-right: 0px;   
+    display: inline-block;
+}
+
+.red{
+    background-color: #dc4f41; 
+}
+
+
+#logos{
+    width: 371px;
+    height: 572px;
+    left: -91px;
+    top: -45px;
+}
+
+#logos2{
+    width: 371px;
+    height: 572px;
+    left: -91px;
+    top: 465px;
+}
+
+
+#smartphone{
+    width: 335px;
+    height: 621px;
+    left: -5px;
+    top: 14px;
+}
+
+
+#sflex, #btnPause, #btnPlay, #circleColor{
+    width: 335px;
+    height: 621px;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+
+
+#btn_appStore{
+    width: 120px;
+    height: 40px;
+    left: 27px;
+    top: 222px;
+}
+
+#btn_googlePlay{
+    width: 135px;
+    height: 40px;
+    left: 158px;
+    top: 222px;
+}
+
+
+#ctg_appStore{
+    width: 120px;
+    height: 40px;
+    left: 27px;
+    top: 222px;
+    cursor: pointer;
+    /*background-color: #ffcc00;    */
+}
+
+#ctg_googlePlay{
+    width: 135px;
+    height: 40px;
+    left: 158px;
+    top: 222px;
+    cursor: pointer;
+    /*background-color: #ffcc00;    */
+}
+
+#contEnd{
+    width: 250px;
+    height: 90px;
+    left: 35px;
+    top: 105px;
+}
+
+[id*='txt-2-']{
+    width: 250px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+}
+
+[id*='txt-white']{
+    width: 250px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+}
+
+
+#barLogo{
+    width: 6px;
+    height: 77px;
+    left: 171px;
+    top: 13px;
+    background-color: #dc4f41;
+}
+
+#logo{
+    width: 67px;
+    height: 47px;
+    left: 239px;
+    top: 14px;
+}
